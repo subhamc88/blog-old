@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content'
+import PostsLayout from '../../layouts/PostsLayout.astro'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog')
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+  }))
+}
+
+type Props = {
+  title: string
+  date: Date
+  description: string
+  heroImage?: string
+  content: string
+}
+
+const post: Props = Astro.props
+---
+
+<PostsLayout title={post.title} date={post.date}>
+  <article>
+    {post.heroImage && (
+      <img src={post.heroImage} alt="Hero Image" class="w-full h-auto mb-4" />
+    )}
+    <div class="prose">
+    </div>
+  </article>
+</PostsLayout>
