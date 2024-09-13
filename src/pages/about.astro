@@ -1,12 +1,22 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro"
+const title = 'About Me'
+const description = "Learn more about the person behind the blog and what drives their passion for software development."
+const date = new Date();
 ---
 
-<MainLayout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	date={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<h1>About Page.</h1>
+<MainLayout title={title} description={description} date={date}>
+	<main class="container mx-auto my-8 p-4 rounded-lg shadow-md">
+		<h1 class="mb-4">About Me</h1>
+		<p class="mb-4">Hi, I’m <strong class='text-accent'>subhamc88</strong>, a passionate B.Tech student with a deep interest in software development and technology. I started this blog to simplify complex tech concepts and share valuable insights with fellow enthusiasts.</p>
+		<p class="mb-4">I’m always eager to connect with fellow tech enthusiasts. Feel free to reach out with any questions, suggestions, or just to say hi!</p>
+		<p class="font-semibold">Thank you for visiting!</p>
+		<p>- <strong class='text-accent'>subhamc88</strong>
+		<div class='flex'>
+			<a href='https://github.com/subhamc88'><img src='/icons/github.png' alt='github icon' class='w-10 h-10 mx-2' /></a>
+			<a href='https://instagram.com/subhamc_88?igsh=M2Njaml0bDZlbmk2&utm_source=qr'><img src='/icons/instagram.png' alt='instagram icon' class='w-10 h-10 mx-2'/></a>
+			<a><img src='icons/mail.png' alt='mail icon' class=' w-10 h-11 mx-2'/></a>
+		</div>
+		</p>
+	</main>
 </MainLayout>
