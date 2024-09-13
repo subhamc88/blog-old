@@ -1,7 +1,7 @@
 ---
 title: 'First Post'
 description: 'This is a test blog post to verify content rendering.'
-date: '2024-09-11'
+pubDate: '2024-09-11'
 heroImage: '/images/git-beginner.webp'
 ---
 

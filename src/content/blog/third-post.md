@@ -1,7 +1,7 @@
 ---
 title: 'Third post'
 description: 'Lorem ipsum dolor sit amet'
-date: 'Jul 22 2022'
+pubDate: 'Jul 22 2022'
 heroImage: '/images/git-beginner.webp'
 ---
 
