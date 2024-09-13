@@ -33,7 +33,7 @@ export default {
         },
         background: '#1e1e2e',
         text: '#e0d7f7',
-        accent: '#f5c2e7', // Accent color set to Pink
+        accent: '#f5c2e7',
       },
     },
   },
