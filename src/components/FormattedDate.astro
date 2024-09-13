@@ -2,9 +2,9 @@
 const { date } = Astro.props;
 
 const formattedDate = date ? new Date(date).toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
 }) : 'Date not available';
 ---
 
