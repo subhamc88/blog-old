@@ -1,17 +1,17 @@
 ---
-import NavbarLink from './NavbarLink.astro';
-import { SITE_TITLE } from '../consts';
+import NavbarLink from './NavbarLink.astro'
+import { SITE_TITLE } from '../consts'
 ---
 
 <header class="bg-background text-text">
-  <nav class="m-4 flex items-center justify-between">
-    <h1 class="text-2xl font-mono font-bold text-accent">
-      <a href="/" class="text-primary">{SITE_TITLE}</a>
-    </h1>
-    <ul class="flex space-x-4 font-mono">
-      <li><NavbarLink href="/">Home</NavbarLink></li>
-      <li><NavbarLink href="/blog">Blog</NavbarLink></li>
-      <li><NavbarLink href="/about">About</NavbarLink></li>
-    </ul>
-  </nav>
+	<nav class="m-4 flex items-center justify-between">
+		<h1 class="text-2xl font-mono font-bold text-accent">
+			<a href="/" class="text-primary">{SITE_TITLE}</a>
+		</h1>
+		<ul class="flex space-x-4 font-mono">
+			<li><NavbarLink href="/" class="max-sm:hidden">Home</NavbarLink></li>
+			<li><NavbarLink href="/blog">Blog</NavbarLink></li>
+			<li><NavbarLink href="/about">About</NavbarLink></li>
+		</ul>
+	</nav>
 </header>
